@@ -1,0 +1,18 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: text-decoration 0.2s ease-in-out;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }

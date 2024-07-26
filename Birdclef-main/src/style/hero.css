@@ -1,0 +1,88 @@
+/* Styles for the hero section */
+
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to vertically center content */
+}
+.hero__content {
+    width: 45%; /* Adjust the width as needed */
+    padding-top: 40px;
+}
+
+.hero__content h2 {
+    font-size: 3rem;
+}
+
+.hero__content p {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6; /* Changed from '65px' to '1.6' for better line spacing */
+}
+
+.hero__btns {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+/* Add a class '.highlight' to target the highlighted text */
+.highlighted {
+    color: var(--primary-color);
+}
+
+
+/* Styles for primary and secondary buttons */
+.primary__btn,
+.secondary__btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.primary__btn {
+    background: var(--btn-secondary-bg);
+}
+
+.secondary__btn {
+    background: var(--btn-primary-bg);
+    
+}
+
+.hero__img {
+    width: 45%; 
+}
+
+
+@media only screen and (max-width:992px) {
+    .hero__content h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .hero__content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .hero__content p{
+        font-size: 0.9rem;  
+    }
+    .primary__btn,
+    .secondary__btn{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:600px) {
+    .hero__content, 
+    .hero__img{
+        width: 100%;
+    }
+    .hero__wrapper{
+        flex-direction: column;
+    }
+}

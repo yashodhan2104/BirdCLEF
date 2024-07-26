@@ -1,0 +1,34 @@
+.App {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f6;
+  vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.col {
+  height: fit-content;
+  width:fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.test2 {
+  height: 100vh;
+  display: block;
+  margin-left: 20%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf9f6;
+}
